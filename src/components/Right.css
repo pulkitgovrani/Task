@@ -1,0 +1,90 @@
+.right-class {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+}
+
+
+  
+  .circle-wrap {
+   
+    width: 150px;
+    height: 150px;
+    background: #050405;
+    border-radius: 50%;
+    border: 1px solid #050405;
+    margin-right: 50px;
+    margin-top: 0px;
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .circle-wrap .inside-circle {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    background: white;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    color: black;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+  /* color animation */
+  
+  /* 3rd progress bar */
+  .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: gray;
+  }
+  
+  .mask.full,
+  .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(135deg);
+  }
+  
+  @keyframes fill{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(135deg);
+    }
+  }
+.language{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.language-circle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.overall-experience{
+    margin-top: 0px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

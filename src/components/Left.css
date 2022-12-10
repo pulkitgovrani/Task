@@ -1,0 +1,17 @@
+.main-class{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+    background-color: rgb(193, 189, 189);
+}
+.progress{
+    width: 250px;
+    height: 30px;
+    background-color: gray;
+}
+.progress-bar{
+    width: 170px;
+    height: 30px;
+    background-color: aqua;
+}
